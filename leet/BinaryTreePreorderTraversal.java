@@ -15,6 +15,7 @@ public class BinaryTreePreorderTraversal {
         }
     }
 
+    // Solution
     public ArrayList<Integer> preorderTraversal(TreeNode root) {
         ArrayList<Integer> result = new ArrayList<Integer>();
         preorderTraversal(root, result);
