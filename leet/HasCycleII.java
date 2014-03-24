@@ -18,12 +18,12 @@ public class HasCycleII {
         ListNode result = detectCycle(a);
         System.out.println(result.val);
     }
-    
+
     public static ListNode detectCycle(ListNode head) {
         ListNode a = head;
         if (a == null)
             return null;
-            
+
         ListNode b = a.next;
         if (b == null)
             return null;
@@ -38,21 +38,21 @@ public class HasCycleII {
                 c = a;
                 break;
             }
-            
+
             a = a.next;
-            
+
             if (b.next == null)
                 return null;
-            
+
             b = b.next.next;
         }
-        
+
         // Build cycle
         while (c != null && !cycle.contains(c)) {
             cycle.add(c);
             c = c.next;
         }
-        
+
         // Traverse the LinkedList again to figure out the first ListNode
         ListNode d = head;
         while (d != null) {
@@ -60,7 +60,7 @@ public class HasCycleII {
                 return d;
             d = d.next;
         }
-        
+
         return null;
     }
 

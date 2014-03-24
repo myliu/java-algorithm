@@ -29,7 +29,8 @@ public class HasCycle {
             System.out.println("False");
     }
 
-    // The only condition to return true is slow node a is the same as fast node b
+    // The only condition to return true is slow node a is the same as fast node
+    // b
     public static boolean hasCycle(ListNode head) {
         ListNode a = head;
         if (a == null)
