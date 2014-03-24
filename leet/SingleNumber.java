@@ -8,7 +8,7 @@ public class SingleNumber {
 
     public static void main(String[] args) {
         int[] A = { 1, 2, 3, 2, 1 };
-        int a = singleNumber(A);
+        int a = singleNumberII(A);
         System.out.println(a);
     }
 
@@ -27,6 +27,14 @@ public class SingleNumber {
         }
 
         return -1;
+    }
+
+    public static int singleNumberII(int[] A) {
+        int result = 0;
+        for (int i : A) {
+            result ^= i;
+        }
+        return result;
     }
 
 }
