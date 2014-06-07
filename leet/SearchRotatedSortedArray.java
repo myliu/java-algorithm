@@ -21,7 +21,7 @@ public class SearchRotatedSortedArray {
         int pivot = (start + end) / 2;
         if (target == A[pivot]) {
             return pivot;
-        } else if (A[pivot] <= A[end]) {
+        } else if (A[pivot] < A[end]) {
             if (target > A[pivot] && target <= A[end]) {
                 return searchHelper(A, target, pivot+1, end);
             } else {
