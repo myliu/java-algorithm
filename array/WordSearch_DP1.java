@@ -1,4 +1,4 @@
-package array_2d;
+package array;
 
 public class WordSearch_DP1 {
 	int[][][] map;

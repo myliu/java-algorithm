@@ -1,4 +1,4 @@
-package binarySearchTree;
+package bst;
 
 class Node<T extends Comparable<?>> {
 	Node<T> left, right;

@@ -1,4 +1,4 @@
-package binarySearchTree;
+package bst;
 
 public class ValidateBST_Min_Max {
 

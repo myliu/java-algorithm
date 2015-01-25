@@ -1,4 +1,4 @@
-package binarySearchTree;
+package bst;
 
 public class LowestCommonAncestor1 {
 

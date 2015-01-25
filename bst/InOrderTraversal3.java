@@ -1,4 +1,4 @@
-package binarySearchTree;
+package bst;
 
 import java.util.Stack;
 
